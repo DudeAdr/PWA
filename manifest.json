@@ -1,0 +1,17 @@
+{
+    "theme_color": "#ff7d00",
+    "background_color": "#d7893e",
+    "display": "fullscreen",
+    "scope": "/",
+    "start_url": "/PWA/",
+    "name": "Blog o autach",
+    "short_name": "AutoLand",
+    "description": "Apka o autach",
+    "icons": [
+        {
+            "src": "./car_icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
