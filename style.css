@@ -38,6 +38,7 @@ nav a {
     padding: 10px;
     opacity: 1;
     transition:cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s;
+    position: relative;
 }
 
 .post:hover{
@@ -49,6 +50,11 @@ nav a {
 .post img {
     max-width: 100%;
     height: auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 @media only screen and (min-width: 768px) {
