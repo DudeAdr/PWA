@@ -9,22 +9,59 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
+    position: relative; 
+    z-index: 0;
+    overflow: hidden;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px;
+    background-color: #ffd700;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 1.5; 
 }
 
 nav {
-    background-color: #444;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #333;
+    padding: 20px 0;
     text-align: center;
+    border-bottom: 2px solid #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); 
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s; 
 }
+
+nav a:hover {
+    background-color: #fff; 
+    color: #333; 
+}
+
 
 .container {
     max-width: 1600px;
@@ -58,6 +95,7 @@ a{
 }
 
 @media only screen and (min-width: 768px) {
+   
     .container {
         display: flex;
         flex-wrap: wrap;
@@ -72,5 +110,14 @@ a{
 @media only screen and (min-width: 992px) {
     .post {
         width: calc(33.33% - 20px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        padding: 8px 15px;
+        font-size: 14px; 
     }
 }

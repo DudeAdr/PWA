@@ -1,5 +1,5 @@
 function writeDown(){
-    fetch('./carsinfo.json')
+    fetch('./cars/carsinfo.json')
     .then(response => response.json())
     .then(data => {
 
@@ -12,6 +12,7 @@ function writeDown(){
             <a href="${car.GoTo}">
                 <img src="${car.ImagePath}">
                 <h2>${car.Name}</h2>
+                <hr></hr>
                 <p>${car.Description}</p>
             </a>
             </div>`;  
