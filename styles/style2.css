@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #333;
 }
 
 header {
@@ -31,7 +32,7 @@ header h1 {
     margin: 0;
     font-size: 36px;
     text-transform: uppercase; 
-    letter-spacing: 2px; 
+    letter-spacing: 2px;
     text-shadow: 2px 2px 4px #000000;
 }
 
@@ -45,7 +46,7 @@ nav {
     background-color: #333;
     padding: 20px 0;
     text-align: center;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid black;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); 
 }
 
@@ -63,63 +64,30 @@ nav a:hover {
     color: #333; 
 }
 
-
-.container {
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.post {
-    border-radius: 10px;
-    margin-bottom: 30px;
-    padding: 10px;
-    opacity: 1;
-    transition:cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s;
-    position: relative;
-}
-
-.post:hover{
-    -webkit-box-shadow: 8px 8px 40px 0px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 8px 8px 40px 0px rgba(66, 68, 90, 1);
-    box-shadow: 8px 8px 40px 0px rgba(66, 68, 90, 1);
-}
-
-.post img {
-    max-width: 100%;
-    height: auto;
-}
-
-a{
-    text-decoration: none;
-    color: inherit;
-}
-
-footer {
-    background-color: #333;
-    color: #fff; 
-    padding: 10px;
-    text-align: center; 
-    font-style: italic;
+.about{
+    background-color: rgb(115, 115, 115);
+    background-image: url("../cars/samBackg.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
-
+.container{
+    max-width: 1900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 1.5rem;
+    font-family: system-ui;
+    color: #fff; 
+}
 @media only screen and (min-width: 768px) {
-   
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .post {
-        width: calc(50% - 20px);
-    }
 }
 
 @media only screen and (min-width: 992px) {
-    .post {
-        width: calc(33.33% - 20px);
-    }
 }
 
 @media only screen and (max-width: 480px) {
