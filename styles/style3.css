@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #333;
+    
 }
 
 header {
@@ -63,27 +63,65 @@ nav a:hover {
     color: #333; 
 }
 
-.about{
-    background-color: rgb(115, 115, 115);
-    background-image: url("../cars/samBackg.jpg");
+.bg{
+    background-image:url("../cars/bg.jpg") ;
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     padding-top: 200px;
     padding-bottom: 200px;
-  }
-
-.container{
-    max-width: 1900px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    font-size: 1.5rem;
-    font-family: system-ui;
-    color: #fff; 
 }
+
+.contact {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.contact h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.contact input,
+.contact textarea {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact textarea {
+    height: 150px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.contact button:hover {
+    background-color: #0056b3;
+}
+
 
 @media only screen and (min-width: 768px) {
 }

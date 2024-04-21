@@ -24,3 +24,20 @@ function writeDown(){
 }
 
 writeDown();
+
+
+var form = document.querySelector('form');
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var formData = new FormData(form);
+
+    var name = formData.get('name');
+    var email = formData.get('email');
+    var message = formData.get('message');
+
+    console.log('Imię i nazwisko:', name);
+    console.log('Adres e-mail:', email);
+    console.log('Wiadomość:', message);
+});
